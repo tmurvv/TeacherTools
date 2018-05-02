@@ -16,7 +16,8 @@ Create repo in github and copy url
 
 ctrl ~ for terminal enter these commands
 
-git remote add origin $url goes here$ (looks like git@github.com:tmurvv/take2techsitesass.git)
+abstract: git remote set-url origin "remoteurlgoeshere"
+example: git remote set-url origin https://github.com/tmurvv/TeacherTools.git
 git push -u origin master
 
 ---------------
