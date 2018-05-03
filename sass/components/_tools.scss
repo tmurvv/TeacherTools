@@ -1,0 +1,28 @@
+.sectionTools {
+    height: 600px;
+
+    &__doorsContainer {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        width: 100%;
+
+        &--door {
+            height: 100%;
+
+
+            &1 {
+                background-color: tomato;
+            }
+            &2 {
+                background-color: olivedrab;
+            }
+            &3 {
+                background-color: cadetblue;
+            }
+        }
+    }
+       
+}
+
+
