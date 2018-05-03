@@ -1,11 +1,33 @@
-header {  
-    background-image:url(../img/school.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 38%;
-    height: 100vh;
-    background-color: $colorPrimary-light;
+.header {
+    height:700px;
+    background-color: #fff7d6;
     position: relative;
+
+    &__logo {
+        float: left;
+        height: 70px;
+        margin: 10px;
+        opacity: .1;
+    }
+
+    &__landingImage {
+        height: 300px;
+        @include centerBoxAbs;
+        top: 25%;        
+    }
+
+    &__constructionImage {
+        height: 35px;
+        float: right;
+        margin: 20px 10px;
+    }
+}
+
+.ion-navicon-round {
+    color: $colorPrimary-dark;
+    float: right;
+    margin: 5px 10px;
+    font-size: 180%;
 }
 
 

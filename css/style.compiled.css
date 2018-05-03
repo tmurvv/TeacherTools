@@ -7,7 +7,6 @@
 html {
   font-size: 62.5%;
   background-color: #fff;
-  color: #555;
   font-family: 'Raleway', 'Arial', san-serif;
   font-size: 20px;
   font-weight: 300;
@@ -26,7 +25,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #666; }
+  color: #973f2f; }
 
 .row {
   max-width: 114rem;
@@ -56,28 +55,98 @@ body {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 1rem) / 4) + 2 * 1rem); }
 
-header {
-  background-image: url(../img/school.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30%;
-  height: 60vh;
-  background-color: #fffbd9; }
+.header {
+  height: 700px;
+  background-color: #fff7d6;
+  position: relative; }
+  .header__logo {
+    float: left;
+    height: 70px;
+    margin: 10px;
+    opacity: .1; }
+  .header__landingImage {
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 25%; }
+  .header__constructionImage {
+    height: 35px;
+    float: right;
+    margin: 20px 10px; }
+
+.ion-navicon-round {
+  color: #87372E;
+  float: right;
+  margin: 5px 10px;
+  font-size: 180%; }
 
 .hero {
   position: absolute;
-  top: 80%;
+  top: 72%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 2px solid #bb523f;
-  padding: 10px 15px;
-  width: 70%;
+  border: 8px double #bb523f;
+  padding: 20px;
+  width: 60%;
   font-size: 140%;
   letter-spacing: 1.2px;
   word-spacing: 1.75px;
   font-weight: 500;
   text-align: center;
-  border-radius: 5px; }
+  border-radius: 20px; }
   .hero span {
     font-size: 180%;
-    color: #db930d; }
+    font-weight: 400;
+    color: #C00606; }
+
+.sectionTools {
+  width: 100%; }
+
+.doorsContainer {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  height: 500px; }
+  .doorsContainer--door {
+    height: 400px;
+    width: 260px;
+    margin-top: 40px;
+    background-image: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 3px 4px 9px #e8ebe8; }
+    .doorsContainer--door > img {
+      height: 30%;
+      margin-top: -10px; }
+    .doorsContainer--door-ageGroup {
+      margin: 15px; }
+    .doorsContainer--door-explainIt {
+      margin-top: 34%;
+      margin-bottom: 10%; }
+    .doorsContainer--door1 {
+      background-image: url("../img/classroomDoor-yellow.png");
+      background-size: 100%; }
+      .doorsContainer--door1 > p, .doorsContainer--door1 > a {
+        background-color: rgba(255, 255, 39, 0.6);
+        color: #4b4848;
+        padding: 5px;
+        border-radius: 7px; }
+    .doorsContainer--door2 {
+      background-image: url("../img/classroomDoor-brown.png");
+      background-size: 100%; }
+      .doorsContainer--door2 > p, .doorsContainer--door2 > a {
+        background-color: rgba(126, 62, 0, 0.6);
+        color: white;
+        padding: 5px;
+        border-radius: 7px; }
+    .doorsContainer--door3 {
+      background-image: url("../img/classroomDoor-orange.png");
+      background-size: 100%; }
+      .doorsContainer--door3 > p, .doorsContainer--door3 > a {
+        background-color: rgba(255, 126, 0, 0.6);
+        color: white;
+        padding: 5px;
+        border-radius: 7px; }

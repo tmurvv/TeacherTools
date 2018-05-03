@@ -9,12 +9,12 @@ html {
     //We chose 10px for ease of conversion from px to rem
     font-size: 62.5%; // 1 rem = 10px or 10px/16px = 62.5%
     background-color: #fff;
-    color: #555;
     font-family: 'Raleway', 'Arial', san-serif;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
 }
+
 
 //BTW Media queries do not refer to the rem size we defined above.
 //We use ems in the mixin in order to get user changes in default settings into scope.  

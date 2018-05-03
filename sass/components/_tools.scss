@@ -1,28 +1,72 @@
 .sectionTools {
-    height: 600px;
-
-    &__doorsContainer {
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        width: 100%;
-
-        &--door {
-            height: 100%;
-
-
-            &1 {
-                background-color: tomato;
-            }
-            &2 {
-                background-color: olivedrab;
-            }
-            &3 {
-                background-color: cadetblue;
-            }
-        }
-    }
-       
+    width: 100%;
 }
 
+.doorsContainer {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    height: 500px;
+    &--door {
+    
+        height: 400px;
+        width: 260px;
+        margin-top: 40px;
+        background-image: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding: 20px;
+        box-shadow:  3px 4px 9px #e8ebe8;
 
+        &>img {
+            height: 30%;
+            margin-top: -10px;
+        }
+
+        &-ageGroup {
+            margin: 15px;
+            
+        }
+        &-explainIt {
+            margin-top: 34%;
+            margin-bottom: 10%;
+
+        }
+        // &-viewTool {
+
+        // }
+        &1 {
+            background-image: url("../img/classroomDoor-yellow.png");
+            background-size: 100%;
+            &>p, &>a { 
+                background-color: rgba(255,255,39,.6);               
+                color: rgb(75, 72, 72);
+                padding: 5px;
+                border-radius: 7px;
+             }
+
+        }
+        &2 {
+            background-image: url("../img/classroomDoor-brown.png");
+            background-size: 100%;
+            &>p, &>a { 
+            background-color: rgba(126,62,0, .6);
+                color: white;
+                padding: 5px;
+                border-radius: 7px;
+             }
+
+        }
+        &3 {
+            background-image: url("../img/classroomDoor-orange.png");
+            background-size: 100%;
+            &>p, &>a { 
+                background-color:  rgba(255,126,0, .6);
+                color: white;
+                padding: 5px;
+                border-radius: 7px;
+             }
+        }
+    }
+}
